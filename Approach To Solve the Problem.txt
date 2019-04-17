@@ -1,0 +1,9 @@
+Since I couldn't find an appropriate dataset to solve the problem statement, I decided to make my own.
+The 4 genre's for my dataset are Love,Religion,Mythology,Nature
+
+1.) I scraped https://www.poets.org/ using BeautifulSoup and Requests library in python to obtain 100 Love,100 Religion,100 Nature and 101 Mythology poems.
+2.) So we have 401 poems in total with a total character count as 200000 which averages to a word count of around 50,000.
+3.) The Dataset has 2 column's which are "Poem Content"(Predictor) and "Type" (target).
+4.) I used TfidfVectorizer to vectorize my text in order to input it into my model.
+5.) The two classifier's i have used for this problem are a) SVC (Support Vector Classification)(classifier1.py)(Accuracy: 67.9%) b) XGBOOST Model (classifier2.py)(Accuracy: 64.2%)
+6.) The python libraries required to run my codes are mentioned in the requirements.txt file.(Run pip install -r requirements.txt)
